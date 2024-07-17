@@ -1,0 +1,24 @@
+<div class="container my-2">
+    <h3>{{counter}}</h3>
+</div>
+<div class="container">
+    
+    <div class="qr-code-container">
+        <div class="row">
+            <p>Please Scan the Qr Code to redeem points.</p>
+        </div>
+        <div class="row">
+            <div class="col d-flex">
+                <qrcode class="qrcode" [qrdata]="dataString"></qrcode>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="control-button-container">
+            <button  class="control-button" (click)="next()">
+                Next
+            </button>
+    </div>
+</div>

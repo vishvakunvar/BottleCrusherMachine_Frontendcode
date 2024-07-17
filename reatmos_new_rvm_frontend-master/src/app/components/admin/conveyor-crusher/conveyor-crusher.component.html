@@ -1,0 +1,29 @@
+<div class="container">
+    <h2>Conveyor and Crusher</h2>
+    <div class="col">
+        <div class="row my-3">
+            <div class="col">
+                <h3>Conveyor Forward:</h3>
+            </div>
+            <div class="col">
+                <button [disabled]="btnDisabled" class="btn btn-primary"  (click)="conveyorFw()">Trigger</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <h3>Conveyor Reverse:</h3>
+            </div>
+            <div class="col">
+                <button [disabled]="btnDisabled" class="btn btn-primary" (click)="conveyorRw()">Trigger</button>
+            </div>
+        </div>
+        <div class="row my-3">
+            <div class="col">
+                <h3>Crusher:</h3>
+            </div>
+            <div class="col">
+                <button [disabled]="btnDisabled" class="btn btn-primary" (click)="crusher()">Trigger</button>
+            </div>
+        </div>
+    </div>
+</div>

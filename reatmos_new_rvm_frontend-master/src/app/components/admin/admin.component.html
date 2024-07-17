@@ -1,0 +1,75 @@
+<div class="my-container">
+    <div class="row">
+        <div class="col-4">
+            <div class="list-group list-group-flush border-bottom scrollarea">
+              <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="machine-data" routerLinkActive="active" aria-current="true">
+                <div class="d-flex w-100 align-items-center justify-content-between">
+                  <strong class="mb-1">Machine Data</strong>
+                </div>
+              </a>
+              
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="conveyor-crusher" routerLinkActive="active" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Conveyor and Crusher</strong>
+                    </div>
+                </a>
+
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="flaps" routerLinkActive="active" aria-current="true">
+                  <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Flaps</strong>
+                  </div>
+              </a>
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="weight" routerLinkActive="active" aria-current="true">
+                  <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Weight</strong>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="metal" routerLinkActive="active" aria-current="true">
+                  <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Metal</strong>
+                  </div>
+              </a>
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="bin" routerLinkActive="active" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Bin</strong>
+                    </div>
+                </a>
+
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="polybags" routerLinkActive="active" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Polybags</strong>
+                    </div>
+                </a>
+
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="camera" routerLinkActive="active" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Camera</strong>
+                    </div>
+                </a>
+
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="password-reset" routerLinkActive="active" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1">Password Reset</strong>
+                    </div>
+                </a>
+                <a class="list-group-item list-group-item-action py-3 lh-sm" routerLink="machine" routerLinkActive="active" aria-current="true">
+                  <div class="d-flex w-100 align-items-center justify-content-between">
+                    <strong class="mb-1">Machine</strong>
+                  </div>
+                </a>
+                <a class="list-group-item list-group-item-action py-3 lh-sm bg-danger" (click)="logout()" routerLinkActive="active" aria-current="true">
+                    <div class="d-flex w-100 align-items-center justify-content-between">
+                      <strong class="mb-1" style="color: white;">Logout</strong>
+                    </div>
+                </a>
+
+                
+              </div>
+        </div>
+        <div class="col">
+            <router-outlet>
+
+            </router-outlet>
+        </div>
+    </div>
+</div>

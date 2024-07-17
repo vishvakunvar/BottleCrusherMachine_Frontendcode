@@ -1,0 +1,15 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+
+body, html{
+    width: 100%;
+    height: 100%;
+}
+
+app-root{
+    order: 0;
+    flex: 1 1 auto;
+    align-self: stretch;
+    display: block;
+}

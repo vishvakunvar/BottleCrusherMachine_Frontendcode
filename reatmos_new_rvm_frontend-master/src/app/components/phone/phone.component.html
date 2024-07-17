@@ -1,0 +1,104 @@
+<div class="my-container">
+    <div class="col">
+        <div class="row">
+            <div class="col">
+                <div class="row">
+                    <h1 style="margin-top: 40px;">Please enter your phone number.</h1>
+                </div>
+                <div class="row" *ngIf="isPhoneNumberInvalid">
+                    <h1 class="error">Please enter a valid 10 digit phone number.</h1>
+                </div>
+                <div class="row">
+                    <div class="phone-box">
+                        <h1>{{phoneNumber}}</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row keyPad">
+            <div class="col">
+                <div class="row row-margin">
+                    <div class="col text-center">
+                        <button (click)="numPressed('1')" class="numpadButton">
+                           1
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('2')" class="numpadButton">
+                            2
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('3')" class="numpadButton">
+                            3
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-margin">
+                    <div class="col text-center">
+                        <button (click)="numPressed('4')" class="numpadButton">
+                           4
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('5')" class="numpadButton">
+                            5
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('6')" class="numpadButton">
+                            6
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-margin">
+                    <div class="col text-center">
+                        <button (click)="numPressed('7')" class="numpadButton">
+                           7
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('8')" class="numpadButton">
+                            8
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('9')" class="numpadButton">
+                            9
+                        </button>
+                    </div>
+                </div>
+                <div class="row row-margin">
+                    <div class="col text-center">
+                        <button (click)="clear()" class="cdButton">
+                           Clear
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="numPressed('0')" class="numpadButton">
+                            0
+                        </button>
+                    </div>
+                    <div class="col text-center">
+                        <button (click)="delete()" class="cdButton">
+                            Delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row row-margin">
+            <div class="col text-center">
+                <button class="controllButton" (click)="cancelPressed()">
+                    Cancel
+                </button>
+            </div>
+            <div class="col text-center">
+                <button (click)="nextPressed()" class="controllButton">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+</div>  

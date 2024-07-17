@@ -1,0 +1,57 @@
+.qr-code-container{
+    width: 650px;
+    height:400px;
+    margin: 150px auto 0 auto;
+    background-color: #C3C3C3C3;
+    border-radius: 25px;
+    padding-top: 25px;
+}
+p{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2{
+    height: fit-content;
+    margin: auto auto;
+}
+
+h3{
+    text-align: right;
+}
+
+.qrcode{
+    margin: auto auto;
+}
+
+.phone-bt{
+    margin: auto 0;
+    border-radius: 25px;
+    width: 170px;
+    height: 80px;
+    font-size: 30px;
+    background-color: greenyellow;
+    font-weight: bold;
+    border: 2px solid green;
+}
+.control-button-container{
+    width: 637px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.control-button{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 180px;
+    font-size: 25px;
+    font-weight: bold;
+    filter: drop-shadow(5px 5px 2.5px #c4c4c4);
+    height: 80px;
+    background-color: #31B2E8;
+    border-radius: 25px;
+    border: 4px solid #3B2C84;
+
+}

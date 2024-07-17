@@ -1,0 +1,59 @@
+<div class="container">
+    <h3 class="my-1" style="text-align: right;">{{counter}}</h3>
+    <h2 *ngIf="showStatus" style="color: {{statusColor}};">{{status}}</h2>
+</div>
+<div class="container">
+    <div class="bottle-card">
+        <div class="row my-2">
+            <div class="col d-flex">
+                <div class="container d-flex">
+                    <img src="../../../assets/images/bottle.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="col-2 d-flex">
+                <div class="vertical-line"></div>
+            </div> -->
+            <div class="col d-flex">
+                <div class="container d-flex">
+                    <img src="../../../assets/images/can.png" alt="">
+                </div>
+            </div>
+            <!-- <div class="col-2 d-flex">
+                <div class="vertical-line"></div>
+            </div> -->
+            <div class="col d-flex">
+                <div class="container d-flex">
+                    <img src="../../../assets/images/polybag.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <h1><strong>X{{totalBottleCount}}</strong></h1>
+            </div>
+            <div class="col">
+                <h1><strong>X{{totalCanCount}}</strong></h1>
+            </div>
+            <div class="col">
+                <h1><strong>X{{totalPolybagCount}}</strong></h1>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<div class="container">
+    <div class="button-card">
+        <div class="row">
+            <div class="col d-flex">
+                <button *ngIf="!hideButtons" [disabled]="disableButton" class="control-button" (click)="back()">
+                    Cancel
+                </button>
+            </div>
+            <div class="col d-flex">
+                <button *ngIf="!hideButtons" [disabled]="disableButton" class="control-button" (click)="next()">
+                    Next
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

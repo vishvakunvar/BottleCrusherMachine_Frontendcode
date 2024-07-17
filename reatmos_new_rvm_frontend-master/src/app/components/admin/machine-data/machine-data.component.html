@@ -1,0 +1,37 @@
+<div class="container">
+    <h2>Machine Data</h2>
+    
+
+    <div class="row my-3">
+        <div class="col">
+            <h3>Bottles:</h3>
+        </div>
+        <div class="col">
+            <h2>{{totalBottles}}</h2>
+         </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col">
+            <h3>Cans:</h3>
+        </div>
+        <div class="col">
+            <h2>{{totalCans}}</h2>
+         </div>
+    </div>
+
+    <div class="row my-3">
+        <div class="col">
+            <h3>Polybags:</h3>
+        </div>
+        <div class="col">
+            <h2>{{totalPolybags}}</h2>
+         </div>
+    </div>
+
+
+
+    <div class="row my-3 justify-content-center">
+        <button class="btn btn-danger" (click)="resetData()">Reset</button>
+    </div>
+</div>

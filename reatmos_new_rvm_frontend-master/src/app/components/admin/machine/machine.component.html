@@ -1,0 +1,38 @@
+<div class="container">
+    <h2>Machine Info</h2>
+    <form>
+        <div class="form-group">
+            <label for="machineID">Machine ID:</label>
+            <input [(ngModel)]="machineId" type="text" class="form-control" id="machineID" name="machineID">
+        </div>
+
+        <div class="form-group">
+            <label for="area">Area:</label>
+            <input [(ngModel)]="area" type="text" class="form-control" id="area" name="area">
+        </div>
+
+        <div class="form-group">
+            <label for="city">City:</label>
+            <input [(ngModel)]="city" type="text" class="form-control" id="city" name="city">
+        </div>
+        
+        <div class="form-group">
+            <label for="state">Sate:</label>
+            <input [(ngModel)]="state" type="text" class="form-control" id="state" name="state">    
+        </div>
+
+        <div class="form-group">
+            <label for="country">Country:</label>
+            <input [(ngModel)]="country" type="text" class="form-control" id="country" name="country">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone:</label>
+            <input [(ngModel)]="phone" type="text" class="form-control" id="phone" name="phone">
+        </div>
+
+        <div class="row justify-content-center my-3">
+            <button class="btn btn-primary" (click)="updateMachineInfo()">Update Machine Data</button>
+        </div>
+    </form>
+</div>
