@@ -19,6 +19,7 @@ export class CameraComponent implements OnInit{
    
   }
 
+  
   startVideoFeed(){
     this.http.get('http://localhost:5000/start_video_feed').subscribe();
   }
@@ -26,9 +27,11 @@ export class CameraComponent implements OnInit{
   getVideoFeed() {
     this.videoUrl = 'http://localhost:5000/video_feed';
   }
+  
   refresh(){
     window.location.reload();
   }
+  
 
   ngOnDestroy() {
     this.http.get('http://localhost:5000/stop_video_feed').subscribe();
